@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #3d5a80;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: #4b70a0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: #1fd0d6;
+            font-size: 1.04rem;
+
+        }
+
+        main hr {
+            background-color: #9c97f1;
+            margin: 15px 84px;
+            height: 1.2px;
+            border: 0;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 75px 0;
+
+        }
+
+        .firstsection>div {
+            width: 31%;
+
+        }
+
+        .leftsection {
+
+            font-size: 3rem;
+
+        }
+
+        button.button {
+
+            padding: 12px;
+            background-color: #ff6b46;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+
+        }
+
+        button.github {
+
+            padding: 12px;
+            background-color: #ff6b46;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+
+        }
+
+        button:hover {
+            background-color:#ff9175;
+            color: #ff6b46;
+            border: 2px solid black;
+        }
+        button a{
+            color:  white;
+            text-decoration: none;
+        }
+        button a:hover{
+         color: #ff6b46;
+        }
+        .rightsection img {
+            width: 85%;
+            margin: 5px 0;
+        }
+
+        .purpple {
+            color: #ff6b46;
+
+        }
+
+        #element {
+            color: #ff6b46;
+        }
+
+        .secondsection {
+            justify-content: space-around;
+            max-width: 80vm;
+            margin: auto;
+            align-items: center;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+            margin: 0 101px 0;
+            text-align: start;
+            color: #fdca3f;
+
+        }
+
+
+        div.box {
+            background-color: white;
+            width: 79vw;
+            height: 0.5px;
+            margin: 0px 100px 0;
+            display: flex;
+        }
+
+        div.about-text {
+            text-align: center;
+            font-size: 19px;
+            margin: 0 77px;
+        }
+
+        div.workdiv {
+            display: block;
+        }
+
+        h1.mywork {
+            font-size: 1.9rem;
+            margin: 0 101px 0;
+            text-align: start;
+            color: #fdca3f;
+
+        }
+
+        div.project1 {
+            padding: 1%;
+            color: white;
+            background-color: #2A629A;
+            width: 85%;
+            border: solid #9c97f1;
+            ;
+            margin: 0 102px 0;
+        }
+
+        h2.perodic {
+            margin: 0 101px 0;
+            color: #6ec603;
+        }
+
+        .periodicimg img {
+            width: 100%;
+            margin: 5px 0;
+        }
+
+        li {
+            margin: 0 102px 0;
+        }
+
+        footer {
+            background-color: #344C64;
+        }
+
+        .footer {
+            display: flex;
+            padding: 16px 83px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        ul li a:hover {
+            color: #1fd0d6;
+            font-size: 1.04rem;
+
+        }
+
+        div.right {
+            margin: 0 23px;
+        }
+
+        div.footer-third {
+            margin: 0 23px 0;
+            display: flex;
+            justify-content: space-evenly;
+            right: 100%;
+        }
+
+        div.mainlink a {
+            text-decoration: none;
+            color: #e3f925;
+            font-size: 19px;
+        }
+
+        div.mainlink a:hover {
+            color: #b3b0fc;
+            font-size: 21px;
+        }
+
+        div.last {
+            background-color: #1c3651da;
+            height: 16px;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <hr>
+        <nav>
+            <div class="left">Priyatam's Portfolio</div>
+            <div class="right">
+                <ul type="none">
+                    <li><a href="#home">Home</li></a>
+                    <li><a href="#about">About</li></a>
+                    <li><a href="#thirdsection">Projects</li></a>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact me</li></a>
+                </ul>
+            </div>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <section class="firstsection" id="home">
+            <div class="leftsection">Hi,my name is <span class="purpple">Priyatam</span>
+                <div>and i am a Passionate</div>
+                <span id="element"></span>
+                <div class="btn">
+                    <button class="button"><a href="Priyatam dash cv.pdf" download="cv">Download Resume</a></button>
+                    <button class="github"><a href="https://github.com/Theflash39" target="_blank">Visit
+                            github</a></button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img class="period" src="devloper.png" alt="devloper image">
+            </div>
+
+        </section>
+
+        <hr>
+        <section class="secondsection">
+            <h1 id="about">About :</h1>
+            <br>
+            <hr>
+            <div class="about-text">
+
+                <span id="elements"></span>
+            </div>
+
+        </section>
+        <hr>
+        <section id="thirdsection">
+            <h1 class="mywork">My Works</h1>
+            <hr>
+            <h2 class="perodic">Periodictable of webside</h2>
+            <br>
+            <div class="project1">
+                A Periodictable through which we can access various type of webside.
+                <br>
+                Technologies: HTML, CSS.
+                <div class="periodicimg">
+                    <img src="webperiod.png" alt="image not found">
+                </div>
+                <div class="mainlink">
+                    Linlk:-<a href="https://theflash39.github.io/webperiodictable/" target="_blank">Periodic table</a>
+                </div>
+            </div>
+            <h2 class="perodic">Qr generator</h2>
+            <br>
+            <div class="project1">
+                It is make Qr code of different link and text etc.
+                <br>
+                Technologies: HTML, CSS,JS.
+                <div class="periodicimg">
+                    <img src="qrgenarator.png" alt="image not found">
+                </div>
+                <div class="mainlink">
+                    Linlk:-<a href="https://theflash39.github.io/QRgenerator/" target="_blank">QR-generator</a></div>
+            </div>
+
+            <h2 class="perodic">Text To speech Converter
+                Write anything here
+            </h2>
+            <br>
+            <div class="project1">
+                Through this project we can we can make sound of different langguage from text .
+                <br>
+                Technologies: HTML, CSS,JS.
+                <div class="periodicimg">
+                    <img src="converter.png" alt="image not found">
+                </div>
+                <div class="mainlink">
+                    Linlk:-<a href="https://theflash39.github.io/speeach/" target="_blank">Voice changer</a></div>
+            </div>
+
+            <h2 class="perodic">Calculator
+            </h2>
+            <br>
+            <div class="project1">
+                this is a simple Calculator through which we done different kind of mathmetical operations
+                <br>
+                Technologies: HTML, CSS,JS.
+                <div class="periodicimg">
+                    <img src="calculator.png" alt="image not found">
+                </div>
+                <div class="mainlink">
+                    Linlk:-<a href="https://theflash39.github.io/calculatorr/" target="_blank">Calculator</a></div>
+            </div>
+        </section>
+        <section class="foursection" id="skills">
+            <br>
+            <h1 class="mywork">Skills</h1>
+            <div class="skill">
+                <ul type=”circle”>
+                    <li type="none"><b>Technical Skills</b></li>
+                    <hr>
+                    <li>Languages: HTML, CSS, JavaScript</li>
+                    <li>Tools: Git, GitHub,VS Code</li>
+                    <li>Additional skills: Responsive design</li>
+                    <hr>
+                    <li type="none"><b>Soft skills</b></li>
+                    <li>Problem-solving</li>
+                    <li>Attention to detail</li>
+                    <li>Communication</li>
+                    <li>Teamwork</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <hr>
+        <div class="footer" id="contact">
+            <div class="footer-first">
+                <h3>Priyatam's Portfolio</h3>
+            </div>
+
+            <div class="footer-second">
+                <ul>
+                    <li type="none"><b>Contact me</b></li>
+                    <li><b>Phone:-</b>+91-9937191554</li>
+                    <li><b>email:-</b>dashpriyatam607@gmail.com</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li type="none"> <b>Connect with Me </b></li>
+                    <li class="links"><a href="https://www.facebook.com/" target="_blank">FaceBook</a></li>
+                    <li><a href="https://www.linkedin.com/feed/" target="_blank">Linkedin</a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                    <li><a href="https://x.com/home" target="_blank">Twitter</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li type="none"><b>Get to Know Us</b></li>
+                    <li><a href="#home">Home</li></a>
+                    <li><a href="#about">About</li></a>
+                    <li><a href="#thirdsection">Projects</li></a>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact me</li></a>
+                </ul>
+            </div>
+        </div>
+        <hr>
+    </footer>
+    <section>
+        <div class="last">
+            Copyright&#169;priyatamportfolio.com | All rights reserved
+        </div>
+        <hr>
+    </section>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Devloper'],
+            typeSpeed: 50,
+        });
+        var typed = new Typed('#elements', {
+            strings: ["Hello! My name is Priyatam, and I am a dedicated frontend developer with a passion for creating visually appealing and user-friendly web applications.With a background in computer science, I have developed a strong foundation in programming and problem-solving.I enjoy the challenge of turning complex requirements into intuitive and accessible user interfaces. My career aspiration is to become a lead frontend developer at a forward-thinking tech company where I can contribute to innovative projects and continue to grow professionally. I am particularly interested in working on applications that make a positive impact on people's lives, whether through improving productivity, providing entertainment, or facilitating communication.In addition to my technical skills, I value collaboration and continuous learning. I am always looking for opportunities to learn new technologies and improve my existing skills. Outside of coding.Thank you for visiting my portfolio."],
+            typeSpeed: 1,
+        });
+    </script>
+</body>
+
+</html>
